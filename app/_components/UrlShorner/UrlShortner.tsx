@@ -48,7 +48,7 @@ export default function UrlShortner() {
                 <div className="mt-8 lg:w-1/2 lg:px-4 lg:mt-0">
                     <Image className="object-cover w-full rounded-xl h-96"
                         src="/images/url-short.webp"
-                        blurDataURL="/images/placeholder.webp"
+                        blurDataURL="/images/url-short.jpg"
                         alt="Video thumbnail" width={470} height={380}
                     />
                 </div>
