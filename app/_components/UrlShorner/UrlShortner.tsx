@@ -2,6 +2,7 @@
 import Heading from "@/app/_uicomponents/Heading";
 import Text from "@/app/_uicomponents/Text";
 import { useFormik } from "formik";
+import Image from "next/image";
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
@@ -45,10 +46,10 @@ export default function UrlShortner() {
                     </div>
                 </div>
                 <div className="mt-8 lg:w-1/2 lg:px-4 lg:mt-0">
-                    <img
-                        className="object-cover w-full rounded-xl h-96"
-                        src="https://images.unsplash.com/photo-1516131206008-dd041a9764fd?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=880&amp;q=80"
-                        alt="Video thumbnail"
+                    <Image className="object-cover w-full rounded-xl h-96"
+                        src="/images/url-short.webp"
+                        blurDataURL="/images/placeholder.webp"
+                        alt="Video thumbnail" width={470} height={380}
                     />
                 </div>
             </div>
